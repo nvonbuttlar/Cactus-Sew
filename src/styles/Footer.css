@@ -32,7 +32,7 @@
   width: 40px;
 }
 
-.fb-link {
+.social-link {
   text-decoration: none;
   color: white;
 }
@@ -42,6 +42,7 @@
   width: 41px;
   margin: 7px;
   opacity: 0.8;
+  transition: background-color 0.5s ease;
 }
 
 .fb:hover {

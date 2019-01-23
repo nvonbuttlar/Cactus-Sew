@@ -4,6 +4,7 @@ import NavBar from './components/NavBar.js';
 import Logo from './images/logo.png';
 import Footer from './components/Footer.js';
 import Background from './images/studio.jpg';
+import About from './components/About.js';
 
 
 class App extends Component {
@@ -20,8 +21,12 @@ class App extends Component {
 
           <img className="logo" src={Logo} alt="Cactus Logo"/>
           <h1 className="title"> Cactus Sewing Studio. </h1>
-          <NavBar/>
+          <NavBar />
         </header>
+
+        <body>
+          <About/>
+        </body>
 
         <Footer/>
       </div>

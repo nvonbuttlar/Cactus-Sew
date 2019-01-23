@@ -9,7 +9,7 @@
   background-color: #e84900;
   font-size: 17px;
   font-weight: bolder;
-  transition: background-color, border-color 1s ease;
+  transition: background-color 0.5s ease;
   outline: none;
 }
 
@@ -17,7 +17,6 @@
 .navItem:hover {
 
   background-color: #CB2238;
-  border-color: #CB2238;
 
 }
 
