@@ -1,0 +1,55 @@
+/*
+* {
+  border: 1px solid red;
+}
+*/
+
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Raleway");
+
+
+
+
+/*-------------------------------------------------------------------------*/
+
+.background {
+  z-index: -1;
+  /* Set up proportionate scaling */
+  width: 100%;
+  min-height: 50%;
+
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.logo {
+  height: 65px;
+  width: 65px;
+}
+
+.title {
+  font-family: 'Indie Flower', cursive;
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+  margin: 0px 390px 0px 30px;
+  float: right
+}
+
+.slogan {
+  font-family: 'Raleway', sans-serif;
+  color: steelblue;
+  margin: 0px;
+}
+
+

@@ -1,0 +1,29 @@
+.navItem {
+  color: white;
+  display: inline-block;
+  margin: 15px 35px 15px 20px;
+  padding: 5px 8px;
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  border-radius: 5px;
+  background-color: #e84900;
+  font-size: 17px;
+  font-weight: bolder;
+  transition: background-color, border-color 1s ease;
+  outline: none;
+}
+
+
+.navItem:hover {
+
+  background-color: #CB2238;
+  border-color: #CB2238;
+
+}
+
+
+.navList {
+  list-style: none;
+  text-align: right;
+}
+
