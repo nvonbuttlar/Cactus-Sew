@@ -13,16 +13,8 @@
   outline: none;
 }
 
-
 .navItem:hover {
 
   background-color: #CB2238;
 
 }
-
-
-.navList {
-  list-style: none;
-  text-align: right;
-}
-
