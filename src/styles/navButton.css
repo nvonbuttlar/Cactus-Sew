@@ -1,4 +1,4 @@
-.navItem {
+.navBtn {
   color: white;
   display: inline-block;
   margin: 15px 35px 15px 20px;
@@ -13,7 +13,7 @@
   outline: none;
 }
 
-.navItem:hover {
+.navBtn:hover {
 
   background-color: #CB2238;
 

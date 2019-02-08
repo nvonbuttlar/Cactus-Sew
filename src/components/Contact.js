@@ -1,31 +1,23 @@
 import React, { Component } from 'react';
 import '../styles/navButton.css';
+import '../styles/clickPage.css';
 
 
 
 class Contact extends Component {
-  state = {
-    on: false,
-  }
 
-  toggle = () => {
-    this.setState({
-      on: !this.state.on
-    })
-  }
+  render(props) {
 
-  render() {
+    const isActive = this.props.active.contact;
+    let contactPage;
+
+    if (isActive) {
+      contactPage = <p className="container"> This is the mafuckin contact page This is the mafuckin contact pageThis is the mafuckin contact pageThis is the mafuckin contact pageThis is the mafuckin contact page This is the mafuckin contact pageThis is the mafuckin contact pageThis is the mafuckin contact pageThis is the mafuckin contact pageThis is the mafuckin contact page</p>;
+    }
 
     return(
       <div>
-        <button onClick={this.toggle} className="navItem"> Contact </button>
-
-        {this.state.on && (
-          <div className="about-container">
-            <h1> Now, This a story all about how my life got turned Upside Down  </h1>
-          </div>
-        )}
-
+        {contactPage}
       </div>
     )
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './styles/App.css';
+import './styles/navButton.css';
 import Background from './images/studio.jpg';
 import Logo from './images/logo.png';
 import About from './components/About.js';
@@ -13,22 +14,63 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      myClass: '',
+      active: {
+        about: false,
+        gallery: false,
+        contact: false,
+      }
     }
 
   this.aboutClicked = this.aboutClicked.bind(this);
-  // this.galleryClicked = this.galleryClicked.bind(this);
-  // this.aboutClicked = this.aboutClicked.bind(this);
+  this.galleryClicked = this.galleryClicked.bind(this);
+  this.contactClicked = this.contactClicked.bind(this);
   }
 
-  aboutClicked(props) {
-    if (this.state.myClass === '') {
+
+  aboutClicked() {
+    if (this.state.active.about === false) {
       this.setState({
-        myClass: 'about',
+        active: {
+          about: true
+        }
       })
     } else {
       this.setState({
-        myClass:'',
+        active: {
+          about: false
+        }
+      })
+    }
+  }
+
+  galleryClicked() {
+    if (this.state.active.gallery === false) {
+      this.setState({
+        active: {
+          gallery: true
+        }
+      })
+    } else {
+      this.setState({
+        active: {
+          gallery: false
+        }
+      })
+    }
+  }
+
+  contactClicked() {
+    if (this.state.active.contact === false) {
+      this.setState({
+        active: {
+          contact: true
+        }
+      })
+    } else {
+      this.setState({
+        active: {
+          contact: false
+        }
       })
     }
   }
@@ -49,16 +91,20 @@ class App extends Component {
           <h1 className="title"> Cactus Sewing Studio. </h1>
 
           <div className="navBar">
-            <button onClick={this.aboutClicked}> about </button>
-            <button onClick={this.galleryClicked}> gallery </button>
-            <button onClick={this.contactClicked}> contact </button>
+            <button className="navBtn" onClick={this.aboutClicked}> About </button>
+            <button className="navBtn" onClick={this.galleryClicked}> Gallery </button>
+            <button className="navBtn" onClick={this.contactClicked}> Contact </button>
           </div>
 
         </header>
 
-        <body className="body">
-          <About/>
-        </body>
+        <div className="body">
+
+          <About active={this.state.active}/>
+          <Gallery active={this.state.active}/>
+          <Contact active={this.state.active}/>
+
+        </div>
 
         <Footer/>
       </div>

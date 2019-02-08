@@ -65,17 +65,11 @@
   text-align: center;
   position: fixed;
   width: 100%;
-  height: auto;
   bottom: 0;
   left: 0;
 }
 
-.about {
-  color: white;
-  font-size: 40px;
-  padding: 25px 50px 50px 50px;
-  margin: 30px 50px;
-}
+
 
 .gallery {
   color: orange;
