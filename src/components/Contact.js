@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ContactMap from './Map.js';
 import '../styles/navButton.css';
 import '../styles/clickPage.css';
 
@@ -12,7 +13,11 @@ class Contact extends Component {
     let contactPage;
 
     if (isActive) {
-      contactPage = <p className="container"> This is the mafuckin contact page This is the mafuckin contact pageThis is the mafuckin contact pageThis is the mafuckin contact pageThis is the mafuckin contact page This is the mafuckin contact pageThis is the mafuckin contact pageThis is the mafuckin contact pageThis is the mafuckin contact pageThis is the mafuckin contact page</p>;
+      contactPage = <div className="container">
+
+        <ContactMap/>
+
+      </div>;
     }
 
     return(
