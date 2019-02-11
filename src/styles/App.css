@@ -1,8 +1,8 @@
-/*
-* {
+
+/** {
   border: 1px solid red;
-}
-*/
+}*/
+
 
 
 /* Fonts */
@@ -17,7 +17,7 @@
   z-index: -1;
   /* Set up proportionate scaling */
   width: 100%;
-  min-height: 50%;
+  min-height: 100%;
 
 
   /* Set up positioning */
@@ -26,13 +26,6 @@
   left: 0;
 }
 
-
-
-/*.slogan {
-  font-family: 'Raleway', sans-serif;
-  color: steelblue;
-  margin: 0px;
-}*/
 
 .body {
   margin:0px;
@@ -47,13 +40,6 @@
 }
 
 
-
-.gallery {
-  color: orange;
-  font-size: 40px;
-  padding: 25px 50px 50px 50px;
-  margin: 30px 50px;
-}
 
 
 

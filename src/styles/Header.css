@@ -1,24 +1,36 @@
-.header {
+#headercontainer {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+#titlecontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  margin: 40px 30px 70px;
+
+}
+
+.title {
+  font-family: 'Indie Flower', cursive;
+  font-weight: bolder;
+  font-size: 100px;
+  color: white;
+  line-height: 10px;
+
 }
 
 .navBar {
   display: flex;
   flex-direction: row;
-}
+  align-items: center;
 
-
-.logo {
-  height: 65px;
-  width: 65px;
-}
-
-.title {
-  font-family: 'Indie Flower', cursive;
-  font-size: 60px;
-  font-weight: bolder;
-  color: white;
-  margin: 0px 390px 0px 30px;
-  float: right
 }
