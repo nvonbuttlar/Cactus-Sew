@@ -19,12 +19,29 @@
 
 }
 
+@media (max-width: 1550px) {
+  img.logo {
+    height: 60px;
+    width: 60px;
+    line-height: 30px;
+  }
+
+}
+
+
+
 .title {
   font-family: 'Indie Flower', cursive;
   font-weight: bolder;
   font-size: 100px;
   color: white;
-  line-height: 10px;
+  line-height: 35px;
+}
+
+@media (max-width: 1550px) {
+  h1.title {
+    font-size: 70px;
+  }
 
 }
 
