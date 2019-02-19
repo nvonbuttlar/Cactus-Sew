@@ -22,7 +22,7 @@ class Footer extends Component {
           </a>
         </div>
 
-        <p className="year"> {currentYear} </p>
+        <p className="year"> &copy; {currentYear} </p>
 
         <p className="contact">
           e: melinda@cactussew.ca <br/>

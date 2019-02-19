@@ -29,8 +29,8 @@
 
 .body {
   margin:0px;
-  background-color: grey;
-  /*opacity: 0.5;*/
+  background-color: black;
+  opacity: 0.75;
   justify-content: center;
   text-align: center;
   position: fixed;
@@ -38,6 +38,9 @@
   bottom: 0;
   left: 0;
 }
+
+
+
 
 
 

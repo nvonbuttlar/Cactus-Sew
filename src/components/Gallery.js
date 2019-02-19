@@ -12,7 +12,7 @@ class Gallery extends Component {
     let galleryPage;
 
     if (isActive) {
-      galleryPage = <p className="container"> This is the mafuckin gallery page
+      galleryPage = <p className="container"> This is the gallery page
         </p>;
     }
 

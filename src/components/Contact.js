@@ -13,9 +13,9 @@ class Contact extends Component {
     let contactPage;
 
     if (isActive) {
-      contactPage = <div className="container">
+      contactPage = <div className="container" >
 
-        <ContactMap/>
+        <ContactMap className="slider"/>
 
       </div>;
     }
