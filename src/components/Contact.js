@@ -7,21 +7,13 @@ import '../styles/clickPage.css';
 
 class Contact extends Component {
 
-  render(props) {
+  render() {
 
-    const isActive = this.props.active.contact;
-    let contactPage;
-
-    if (isActive) {
-      contactPage = <div className="container" >
-
-        <ContactMap className="slider"/>
-
-      </div>;
-    }
+    let contactPage = <ContactMap className="map"/>;
 
     return(
-      <div>
+      <div className="container">
+        <p>Contact</p>
         {contactPage}
       </div>
     )

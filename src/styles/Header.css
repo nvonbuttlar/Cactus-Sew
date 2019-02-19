@@ -8,8 +8,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
 
-
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .logo {
@@ -31,7 +35,9 @@
                0px 18px 23px rgba(0,0,0,0.1);
 }
 
-@media (max-width: 1550px) {
+
+
+@media (max-width: 1600px) {
   h1.title {
     font-size: 70px;
   }
@@ -40,12 +46,5 @@
     height: 70px;
     width: 70px;
   }
-
-}
-
-.navBar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 
 }

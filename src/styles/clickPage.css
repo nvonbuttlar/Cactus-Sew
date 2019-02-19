@@ -1,7 +1,13 @@
 .container {
-  min-height: 570px;
-  color: white;
   font-size: 40px;
+  height: 680px;
+  color: white;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    height: 550px;
+    }
 }
 
 .slider {

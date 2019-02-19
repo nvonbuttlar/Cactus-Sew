@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './styles/App.css';
 import './styles/navButton.css';
 import Background from './images/studio.jpg';
@@ -11,106 +12,50 @@ import Footer from './components/Footer.js';
 
 
 
+
 class App extends Component {
-  constructor(props) {
-      super(props);
-      this.state = {
-        active: {
-          about: false,
-          gallery: false,
-          contact: false,
-        }
-      }
-
-    this.aboutClicked = this.aboutClicked.bind(this);
-    this.galleryClicked = this.galleryClicked.bind(this);
-    this.contactClicked = this.contactClicked.bind(this);
-    }
-
-
-    aboutClicked() {
-      if (this.state.active.about === false) {
-        this.setState({
-          active: {
-            about: true
-          }
-        })
-      } else {
-        this.setState({
-          active: {
-            about: false
-          }
-        })
-      }
-    }
-
-    galleryClicked() {
-      if (this.state.active.gallery === false) {
-        this.setState({
-          active: {
-            gallery: true
-          }
-        })
-      } else {
-        this.setState({
-          active: {
-            gallery: false
-          }
-        })
-      }
-    }
-
-    contactClicked() {
-      if (this.state.active.contact === false) {
-        this.setState({
-          active: {
-            contact: true
-          }
-        })
-      } else {
-        this.setState({
-          active: {
-            contact: false
-          }
-        })
-      }
-    }
 
 
   render() {
     return (
-      <div>
-        <img
-          className="background"
-          src={Background}
-          alt="background of studio"
-        />
+      <Router>
+        <div>
+          <img
+            className="background"
+            src={Background}
+            alt="background of studio"
+          />
 
-        <div id="headercontainer">
+          <div id="headercontainer">
 
-          <div id="titlecontainer">
-            <img className="logo" src={Logo} alt="Cactus Logo"/>
-            <h1 className="title"> Cactus Sewing Studio. </h1>
+            <div id="titlecontainer">
+              <img className="logo" src={Logo} alt="Cactus Logo"/>
+              <h1 className="title"> Cactus Sewing Studio. </h1>
+            </div>
+
+            <div className="navBar">
+
+              <Link to={'/about'} className="link">  <button className="navBtn"> About </button> </Link>
+              <Link to={'/gallery'} className="link">  <button className="navBtn"> Gallery </button> </Link>
+              <Link to={'/contact'} className="link">  <button className="navBtn"> Contact </button> </Link>
+
+            </div>
+
           </div>
 
-          <div className="navBar">
-            <button className="navBtn" onClick={this.aboutClicked}> About </button>
-            <button className="navBtn" onClick={this.galleryClicked}> Gallery </button>
-            <button className="navBtn" onClick={this.contactClicked}> Contact </button>
+          <div className="body">
+
+            <Route path="/about" component={About}/>
+            <Route path="/gallery" component={Gallery}/>
+            <Route path="/contact" component={Contact}/>
+
           </div>
+
+          <Footer/>
 
         </div>
 
-        <div className="body">
-
-          <About active={this.state.active}/>
-          <Gallery active={this.state.active}/>
-          <Contact active={this.state.active}/>
-
-        </div>
-
-        <Footer/>
-      </div>
+      </Router>
     );
   }
 }

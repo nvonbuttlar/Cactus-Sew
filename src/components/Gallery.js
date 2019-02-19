@@ -6,19 +6,12 @@ import '../styles/clickPage.css';
 
 class Gallery extends Component {
 
-  render(props) {
+  render() {
 
-    const isActive = this.props.active.gallery;
-    let galleryPage;
-
-    if (isActive) {
-      galleryPage = <p className="container"> This is the gallery page
-        </p>;
-    }
-
+    let galleryPage = <p> This is the gallery page </p>;
 
     return(
-      <div>
+      <div className="container">
         {galleryPage}
       </div>
     )
