@@ -28,10 +28,9 @@
 
 
 .body {
+  font-family: 'Raleway', cursive;
   padding-top: 100%;
-  background-color: hsla(0, 0%, 0%, 0.75);
-  justify-content: center;
-  text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.47);
   position: fixed;
   width: 100%;
   bottom: 0;

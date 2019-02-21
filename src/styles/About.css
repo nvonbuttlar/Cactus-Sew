@@ -1,0 +1,27 @@
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  margin: 400px;
+}
+
+.about-picture {
+  margin-top: 5%;
+  display: inline;
+  max-width: 20em;
+  max-height: 20em;
+  width: auto;
+  height: auto;
+}
+
+.about-heading {
+  margin-top: 7%;
+  margin-left: 40px;
+}
+
+.about-info {
+
+  font-size: 20px;
+  margin-left: 40px;
+
+
+}
