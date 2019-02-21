@@ -24,5 +24,6 @@
 .navBtn:hover {
 
   background-color: #CB2238;
+  cursor: pointer;
 
 }

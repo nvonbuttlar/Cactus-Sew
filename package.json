@@ -15,6 +15,7 @@
     "react-images": "^0.5.19",
     "react-photo-gallery": "^6.3.1",
     "react-router-dom": "^4.3.1",
+    "react-router-page-transition": "^3.1.0",
     "react-scripts": "^2.1.5"
   },
   "scripts": {
