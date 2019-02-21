@@ -12,19 +12,20 @@ import Footer from './components/Footer.js';
 
 
 
-
 class App extends Component {
 
 
   render() {
     return (
       <Router>
+
         <div>
+
           <img
             className="background"
             src={Background}
             alt="background of studio"
-          />
+            />
 
           <div id="headercontainer">
 

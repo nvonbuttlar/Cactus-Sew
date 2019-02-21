@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PhotoGallery from 'react-photo-gallery';
 import Lightbox from 'react-images';
 import '../styles/clickPage.css';
+import '../styles/Gallery.css';
 
 
 const photos = [
@@ -52,8 +53,7 @@ class Gallery extends React.Component {
 
   render() {
     return (
-      <div className="container-gallery">
-        <p> Gallery </p>
+      <div className="container gallery">
         <PhotoGallery photos={photos} onClick={this.openLightbox} />
         <Lightbox images={photos}
           onClose={this.closeLightbox}
