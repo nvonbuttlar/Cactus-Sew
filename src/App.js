@@ -35,8 +35,8 @@ class App extends Component {
 
             <div className="navBar">
               <Link to={'/about'} className="link"> <button className="navBtn"> About </button> </Link>
-              <Link to={'/gallery'} className="link"> <button className="navBtn"> Gallery </button> </Link>
               <Link to={'/contact'} className="link"> <button className="navBtn"> Contact </button> </Link>
+              <Link to={'/gallery'} className="link"> <button className="navBtn"> Gallery </button> </Link>
             </div>
           </div>
 
