@@ -1,0 +1,13 @@
+.info-container {
+  display: flex;
+  flex-direction: row; 
+  height: 530px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.contact-info {
+  margin: 0px 60px 0px 30px;
+}

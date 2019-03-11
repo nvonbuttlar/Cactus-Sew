@@ -32,7 +32,7 @@ class ContactMap extends React.Component {
   render() {
 
     return (
-      <MapContainer height="65%" width="70%" id="map" className="map-container"/>
+      <MapContainer height="65%" width="80%" id="map" className="map-container"/>          
     );
   }
 }
