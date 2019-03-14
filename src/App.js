@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import './styles/App.css';
 import './styles/navButton.css';
 import Background from './images/studio.jpg';
@@ -9,11 +10,8 @@ import About from './components/About.js';
 import Gallery from './components/Gallery.js';
 import Contact from './components/Contact.js';
 import Footer from './components/Footer.js';
-import Transition from './components/Transition.js';
-
 
 class App extends Component {
-
 
   render() {
     return (
@@ -41,9 +39,9 @@ class App extends Component {
           </div>
 
           <div className="body">
-              <Route path="/about" component={About}/>
-              <Route path="/gallery" component={Gallery}/>
-              <Route path="/contact" component={Contact}/>
+              <Route exact={true} path="/about" component={About}/>
+              <Route exact={true} path="/contact" component={Contact}/>
+              <Route exact={true} path="/gallery" component={Gallery}/>
           </div>
 
           <Footer/>
@@ -54,5 +52,8 @@ class App extends Component {
     );
   }
 }
+
+
+
 
 export default App;

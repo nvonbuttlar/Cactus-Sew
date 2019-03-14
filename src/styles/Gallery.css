@@ -1,3 +1,6 @@
 .gallery {
+  height: 800px;
   overflow-y: scroll;
 }
+
+/* media query for laptop */

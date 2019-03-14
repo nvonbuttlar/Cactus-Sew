@@ -17,11 +17,15 @@ class Contact extends Component {
         <div className="contact-info">
           <h2>Come find us!</h2>  
           <p> We're located at 1 Wiltshire Avenue Suite #219, just a short walk from Landsdowne & Dupont.</p>        
-          <p>
-            e: melinda@cactussew.ca <br/>
-            p: +1 647 278 2700 <br/>
-            1 Wiltshire Ave, Suite #219 <br/>
-            Toronto, Ontario
+          <p> 
+          <strong> Address: </strong> 1 Wiltshire Ave, Suite #219, Toronto, Ontario <br/>
+          <br/>
+          <strong> E-mail: </strong> melinda@cactussew.ca
+          <br/>
+          <br/> 
+          <strong> Phone: </strong> +1 647 278 2700 
+          <br/>
+          <br/>
           </p>
         </div>
       </div>

@@ -12,7 +12,7 @@ const MapContainer = styled.div`
   height: ${props => props.height};
 `
 
-class ContactMap extends React.Component {
+class ContactMap extends Component {
 
   componentDidMount(){
     this.map = L.map('map', {

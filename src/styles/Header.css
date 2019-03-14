@@ -6,6 +6,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 
 
 #headercontainer {
+  width: 100%;
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -16,23 +17,17 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 #titlecontainer {
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .logo {
   height: 100px;
   width: 100px;
-  margin: 0px 0px 70px;
 }
 
 .title {
   font-family: 'Indie Flower', cursive;
   font-weight: bolder;
   font-size: 90px;
-  color: white;
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-               0px 8px 13px rgba(0,0,0,0.1),
-               0px 18px 23px rgba(0,0,0,0.1);
   margin: 0px;
 
 }
@@ -40,8 +35,6 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 .navBar {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  margin-left: 15em;
 }
 
 
