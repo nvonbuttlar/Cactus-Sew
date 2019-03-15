@@ -12,6 +12,19 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower|Raleway");
 
 
+/* --------------CSS TRANSITION GROUP--------------- */
+
+.fade {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+
 
 
 /*-------------------------------------------------------------------------*/
