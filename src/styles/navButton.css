@@ -1,6 +1,8 @@
 .navBtn {
   color: white;
   padding: 10px 20px;
+  margin: 15px 30px;
+  align-self: center;
   font-family: 'Raleway', sans-serif;
   border: none;
   border-radius: 5px;
@@ -17,6 +19,7 @@
 @media (max-width: 1600px) {
   button.navBtn {
     padding: 8px 14px;
+    margin: 10px 20px;
   }
 
 }

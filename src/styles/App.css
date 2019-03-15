@@ -14,7 +14,7 @@
 
 /* --------------CSS TRANSITION GROUP--------------- */
 
-.fade {
+/* .fade {
   opacity: 0;
   z-index: 1;
 }
@@ -22,7 +22,7 @@
 .fade-enter.fade-enter-active {
   opacity: 1;
   transition: opacity 1000ms ease-in;
-}
+} */
 
 
 
@@ -42,7 +42,6 @@
   left: 0;
 }
 
-
 .body {
   font-family: 'Raleway', cursive;
   padding-top: 100%;
@@ -53,9 +52,7 @@
   left: 0;
 }
 
-.link {
-  margin: 35px;
-}
+
 
 
 

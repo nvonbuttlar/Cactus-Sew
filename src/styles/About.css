@@ -9,6 +9,7 @@
   display: inline;
   max-width: 20em;
   max-height: 20em;
+  border-radius: 5px;
 }
 
 .about-heading {
