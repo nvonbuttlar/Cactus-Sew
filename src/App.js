@@ -30,7 +30,7 @@ class App extends Component {
             <div id="headercontainer">
               <div id="titlecontainer">
                 <Link to={'/'} className="link"> <img className="cactus" src={Cactus} alt="Cactus Logo"/> </Link>
-                {/* <Link to={'/'} className="link"> <h1 className="title"> </h1> </Link> */}
+                <Link to={'/'} className="link"> <h1 className="title"> </h1> </Link>
               </div>
 
               <div className="navBar">
@@ -45,14 +45,14 @@ class App extends Component {
             
               <Route render={({ location }) => console.log(location) || (
                 <TransitionGroup>
-                  {/* <CSSTransition key={location.key} timeout={0} classNames='fade'> */}
+                  <CSSTransition key={location.key} timeout={0} classNames='fade'>
                     <Switch location={location}>
                       <Route exact={true} path="/" component={Landing}/>
                       <Route exact={true} path="/about" component={About}/>
                       <Route exact={true} path="/contact" component={Contact}/>
                       <Route exact={true} path="/gallery" component={Gallery}/>
                     </Switch>
-                  {/* </CSSTransition> */}
+                  </CSSTransition>
                 </TransitionGroup>
               )}/>
               

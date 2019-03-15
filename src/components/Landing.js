@@ -13,9 +13,9 @@ class Landing extends Component {
 
     return(
       <div className="container">
-        <div className="flex-column">
+        <div className="column">
           <h1 className="typewriter"> 
-            Welcome to Cactus Sewing Studio  
+            Welcome to Cactus Sewing Studio.  
           </h1>
         </div>
       </div>
