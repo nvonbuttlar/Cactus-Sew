@@ -2,14 +2,19 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 0%, 0%, 0.75);
+  border-radius: 10px;
   margin: 200px;
 }
+
 
 .about-picture {
   display: inline;
   max-width: 20em;
   max-height: 20em;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin-left: 10px;
 }
 
 .about-heading {

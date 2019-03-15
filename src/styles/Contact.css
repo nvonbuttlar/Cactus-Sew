@@ -1,6 +1,7 @@
 .info-container {
   display: flex;
   flex-direction: row; 
+  justify-content: center;
   height: 530px;
 }
 
@@ -9,6 +10,12 @@ h2 {
 }
 
 .contact-info {
+
   font-size: 20px;
   margin: 0px 60px 0px 30px;
+  padding: 15px;
+  background-color: hsla(0, 0%, 0%, 0.75);
+  border-radius: 10px;
+  height: 60%;
+  width: 25%;
 }
