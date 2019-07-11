@@ -16,7 +16,6 @@
   animation: 
     typing 4s steps(40, end),
     blink-caret .75s step-end infinite;
-  margin-bottom: 25%;
   font-size: 40px;
 }
 

@@ -15,20 +15,17 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <img
+        <div className="page-content">
+          {/* <img
             className="background"
             src={Background}
             alt="background of studio"
-          />
+          /> */}
 
           <div id="headercontainer">
             <div id="titlecontainer">
               <Link to={"/"} className="link">
                 <img className="cactus" src={Cactus} alt="Cactus Logo" />
-              </Link>
-              <Link to={"/"} className="link">
-                <h1 className="title"> </h1>
               </Link>
             </div>
 
@@ -45,7 +42,7 @@ class App extends Component {
             </div>
           </div>
 
-          <div className="body">
+          <div>
             <Route
               render={({ location }) =>
                 console.log(location) || (
