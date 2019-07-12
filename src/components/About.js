@@ -5,7 +5,7 @@ import "../styles/About.css";
 class About extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="about-container">
         <img className="about-picture" src={Spacewoman} alt="Spacewoman" />
         <div className="flex-column">
           <h1 className="about-heading"> Hey, my name is Melinda. </h1>
@@ -17,9 +17,7 @@ class About extends Component {
             piece of the pie. Flying away on a wing and a prayer. Who could it
             be? Believe it or not its just me? Come and play. Everything's A-OK.
             Friendly neighbors there that's where we meet. Can you tell me how
-            to get how to get to Sesame Street. Just sit right back and you'll
-            hear a tale a tale of a fateful trip that started from this tropic
-            port aboard this tiny ship.
+            to get how to get to Sesame Street. 
           </p>
         </div>  
       </div>

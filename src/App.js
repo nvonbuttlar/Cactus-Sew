@@ -16,11 +16,11 @@ class App extends Component {
     return (
       <Router>
         <div className="page-content">
-          {/* <img
+          <img
             className="background"
             src={Background}
             alt="background of studio"
-          /> */}
+          />
 
           <div id="headercontainer">
             <div id="titlecontainer">

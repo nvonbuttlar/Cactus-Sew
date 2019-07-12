@@ -103,7 +103,7 @@ class Gallery extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="gallery">
         <PhotoGallery
           key={photos.id}
           photos={photos}

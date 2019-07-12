@@ -3,7 +3,6 @@ import L from 'leaflet';
 import styled from 'styled-components';
 import 'leaflet/dist/leaflet.css';
 import '../styles/Map.css';
-import '../styles/clickPage.css';
 
 // Coordinates @ Cactus Sewing Stuido [43.6676617,-79.4520773]
 
