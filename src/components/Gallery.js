@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PhotoGallery from "react-photo-gallery";
 import Lightbox from "react-images";
-import "../styles/clickPage.css";
 import "../styles/Gallery.css";
 
 const photos = [
@@ -104,7 +103,7 @@ class Gallery extends Component {
 
   render() {
     return (
-      <div className="container gallery">
+      <div className="gallery">
         <PhotoGallery
           key={photos.id}
           photos={photos}

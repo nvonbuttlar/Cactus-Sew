@@ -1,22 +1,29 @@
-.info-container {
+.contact-container {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  height: 530px;
+  align-items: center;
+  height: 90vh;
+}
+
+.map-container {
+  width: 500px;
+  height: 300px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.contact-info {
+  width: 500px;
+  height: 300px;
+  margin: 15px;
+  padding: 15px;
+  background-color: hsla(0, 0%, 0%, 0.75);
+  border-radius: 10px;
+  font-size: 20px;
+  /* margin-top: 40px; */
 }
 
 h2 {
   margin: 0;
-}
-
-.contact-info {
-
-  font-size: 20px;
-  margin: 0px 60px 0px 30px;
-  padding: 15px;
-  background-color: hsla(0, 0%, 0%, 0.75);
-  border-radius: 10px;
-  height: 60%;
-  width: 25%;
 }
