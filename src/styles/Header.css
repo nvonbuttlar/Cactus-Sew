@@ -34,6 +34,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
   margin-left: 25px;
   height: 85px;
   width: 55px;
+  padding: 15px;
 }
 
 .navBar {
@@ -48,9 +49,9 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
     font-size: 60px;
   }
 
-  img.logo {
+  /* img.logo {
     height: 70px;
     width: 70px;
-  }
+  } */
 
 }
