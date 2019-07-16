@@ -16,13 +16,13 @@ class GoogleMap extends Component {
   };
 
   render() {
-    const api_key = process.env.REACT_APP_API_KEY;
-    console.log("XXX", api_key);
+    console.log("HIII", process.env)
+    const API_KEY = process.env.REACT_APP_API_KEY
     return (
       // Important! Always set the container height explicitly
       <div style={{ height: "300px", width: "500px" }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: api_key }}
+          bootstrapURLKeys={{ key: API_KEY}}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
