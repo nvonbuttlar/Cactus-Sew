@@ -1,14 +1,13 @@
 import React, { Component } from "react";
-import ContactMap from "./Map.js";
+import GoogleMap from "./Map.js";
 import "../styles/Contact.css";
 
 class Contact extends Component {
   render() {
-    let contactPage = <ContactMap className="map" />;
 
     return (
       <div className="contact-container">
-        <div className="map-container">{contactPage}</div>
+        <GoogleMap />
         <div className="contact-info">
           <h2>Come find us!</h2>
           <p>
