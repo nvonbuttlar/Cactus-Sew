@@ -1,40 +1,40 @@
-import React, { Component } from 'react';
-import L from 'leaflet';
-import styled from 'styled-components';
-import 'leaflet/dist/leaflet.css';
-import '../styles/Map.css';
+import React, { Component } from "react";
+import GoogleMapReact from "google-map-react";
+
 
 // Coordinates @ Cactus Sewing Stuido [43.6676617,-79.4520773]
 
-const MapContainer = styled.div`
-  width: ${props => props.width};
-  height: ${props => props.height};
-`
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-class ContactMap extends Component {
-
-  componentDidMount(){
-    this.map = L.map('map', {
-      center: [43.6676617, -79.4520773],
-      zoom: 16,
-      zoomControl: false,
-    });
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      detectRetina: true,
-      maxZoom: 20,
-      maxNativeZoom: 17,
-      zoomOffset: 0,
-    }).addTo(this.map);
-  }
+class GoogleMap extends Component {
+  static defaultProps = {
+    center: {
+      lat: 43.6676617,
+      lng: -79.4520773
+    },
+    zoom: 11
+  };
 
   render() {
-
+    console.log("HIII", process.env)
+    const API_KEY = process.env.REACT_APP_API_KEY
     return (
-      <MapContainer height="65%" width="40%" id="map" className="map-container"/>          
+      // Important! Always set the container height explicitly
+      <div style={{ height: "300px", width: "500px" }}>
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: API_KEY}}
+          defaultCenter={this.props.center}
+          defaultZoom={this.props.zoom}
+        >
+          <AnyReactComponent
+            lat={43.6676617}
+            lng={-79.4520773}
+            text="My Marker"
+          />
+        </GoogleMapReact>
+      </div>
     );
   }
 }
 
-
-export default ContactMap;
+export default GoogleMap;
