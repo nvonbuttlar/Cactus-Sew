@@ -2,72 +2,89 @@ import React, { Component } from "react";
 import { Spring } from "react-spring/renderprops";
 import PhotoGallery from "react-photo-gallery";
 import Lightbox from "react-images";
+
 import "../styles/Gallery.css";
+
+import { GALLERY_IMAGES } from "../utils/gallery-utils";
+
+console.log(GALLERY_IMAGES);
 
 const photos = [
   {
-    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    src: GALLERY_IMAGES[0].src,
     width: 4,
     height: 3
   },
   {
-    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
+    src: GALLERY_IMAGES[1].src,
     width: 1,
     height: 1
   },
   {
-    src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+    src: GALLERY_IMAGES[2].src,
     width: 3,
     height: 4
   },
   {
-    src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
+    src: GALLERY_IMAGES[3].src,
     width: 3,
     height: 4
   },
   {
-    src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
+    src: GALLERY_IMAGES[4].src,
     width: 3,
     height: 4
   },
   {
-    src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+    src: GALLERY_IMAGES[5].src,
     width: 4,
     height: 3
   },
   {
-    src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+    src: GALLERY_IMAGES[6].src,
     width: 3,
     height: 4
   },
   {
-    src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+    src: GALLERY_IMAGES[7].src,
     width: 4,
     height: 3
   },
   {
-    src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+    src: GALLERY_IMAGES[8].src,
     width: 4,
     height: 3
+  },
+  {
+    src: GALLERY_IMAGES[9].src,
+    width: 4,
+    height: 3
+  },
+  {
+    src: GALLERY_IMAGES[10].src,
+    width: 4,
+    height: 3
+  },
+  {
+    src: GALLERY_IMAGES[11].src,
+    width: 4,
+    height: 3
+  },
+  {
+    src: GALLERY_IMAGES[12].src,
+    width: 4,
+    height: 3
+  },
+  {
+    src: GALLERY_IMAGES[13].src,
+    width: 1,
+    height: 1
+  },
+  {
+    src: GALLERY_IMAGES[14].src,
+    width: 3,
+    height: 4
   }
-  // {
-  //   id: 10,
-  //   src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
-  //   width: 4,
-  //   height: 3
-  // },
-  // {
-  //   id: 11,
-  //   src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
-  //   width: 1,
-  //   height: 1
-  // },
-  // {
-  //   id: 12,
-  //   src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
-  //   width: 3,
-  //   height: 4
-  // }
 ];
 
 class Gallery extends Component {
