@@ -31,4 +31,5 @@
 .about-info {
   font-size: 20px;
   margin: 15px;
+  overflow: scroll;
 }

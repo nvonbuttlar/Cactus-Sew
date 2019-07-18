@@ -14,9 +14,54 @@ h1 {
   font-size: 45px;
 }
 
-/* Keyframes */
+.css-typing {
+  border-right: 0.15em solid #e84900;
+  white-space: nowrap;
+  overflow: hidden;
 
-@keyframes shine {
-  0% {}
-  100% {}
+  width: 950px;
+  opacity: 0;
+  -webkit-animation: type3 5s steps(33, end),
+    blink 0.5s step-end infinite alternate;
+  animation: type3 5s steps (33, end), blink 0.5s step-end infinite alternate;
+  /* -webkit-animation-delay: 1s; */
+  /* animation-delay: 1s; */
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* Keyframes */
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
 }
