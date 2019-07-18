@@ -1,21 +1,15 @@
-import React, { Component } from 'react';
-import '../styles/Landing.css';
+import React from "react";
+import { useSpring, animated } from "react-spring";
 
+import "../styles/Landing.css";
 
-
-class Landing extends Component {
-
-  render() {
-
-    return(
-      <div className="column typewriter">
-          <h1> 
-            Welcome to Cactus Sewing Studio.  
-          </h1>
-      </div>
-    )
-  }
+function Landing() {
+  const fade_transition = useSpring({ opacity: 1, from: { opacity: 0 } });
+  return (
+    <animated.div style={fade_transition} className="container">
+      <h1>Welcome to Cactus Sewing Studio.</h1>
+    </animated.div>
+  );
 }
-
 
 export default Landing;
