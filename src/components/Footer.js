@@ -30,12 +30,15 @@ class Footer extends Component {
 
         <p className="year"> &copy; {currentYear} </p>
 
-        <p className="contact">
-          e: melinda@cactussew.ca <br />
-          p: +1 647 278 2700 <br />
-          1 Wiltshire Ave, Suite #219 <br />
-          Toronto, Ontario
-        </p>
+        <div className="contact">
+          <h4>Cactus Sewing Studio</h4>
+          <ul>
+            <li> e: melinda@cactussew.ca</li>
+            <li> p: +1 647 278 2700</li>
+            <li> 1 Wiltshire Ave, Suite #219</li>
+            <li> Toronto, Ontario</li>
+          </ul>
+        </div>
       </div>
     );
   }

@@ -1,21 +1,13 @@
-import React, { Component } from 'react';
-import '../styles/Landing.css';
+import React from "react";
 
+import "../styles/Landing.css";
 
-
-class Landing extends Component {
-
-  render() {
-
-    return(
-      <div className="column typewriter">
-          <h1> 
-            Welcome to Cactus Sewing Studio.  
-          </h1>
-      </div>
-    )
-  }
+function Landing() {
+  return (
+    <div className="container">
+      <h1 className="css-typing">Welcome to Cactus Sewing Studio.</h1>
+    </div>
+  );
 }
-
 
 export default Landing;

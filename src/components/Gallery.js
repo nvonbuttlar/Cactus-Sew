@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Spring } from "react-spring/renderprops";
 import PhotoGallery from "react-photo-gallery";
 import Lightbox from "react-images";
 import "../styles/Gallery.css";
@@ -48,7 +49,7 @@ const photos = [
     src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
     width: 4,
     height: 3
-  },
+  }
   // {
   //   id: 10,
   //   src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
@@ -103,22 +104,26 @@ class Gallery extends Component {
 
   render() {
     return (
-      <div className="gallery">
-        <PhotoGallery
-          key={photos.id}
-          photos={photos}
-          onClick={this.openLightbox}
-        />
-        <Lightbox
-          key={photos.id}
-          images={photos}
-          onClose={this.closeLightbox}
-          onClickPrev={this.gotoPrevious}
-          onClickNext={this.gotoNext}
-          currentImage={this.state.currentImage}
-          isOpen={this.state.lightboxIsOpen}
-        />
-      </div>
+      <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
+        {props => (
+          <div style={props} className="gallery">
+            <PhotoGallery
+              key={photos.id}
+              photos={photos}
+              onClick={this.openLightbox}
+            />
+            <Lightbox
+              key={photos.id}
+              images={photos}
+              onClose={this.closeLightbox}
+              onClickPrev={this.gotoPrevious}
+              onClickNext={this.gotoNext}
+              currentImage={this.state.currentImage}
+              isOpen={this.state.lightboxIsOpen}
+            />
+          </div>
+        )}
+      </Spring>
     );
   }
 }
