@@ -20,6 +20,7 @@ class GoogleMap extends Component {
   render() {
     const { center, zoom } = this.props;
     const API_KEY = process.env.REACT_APP_API_KEY;
+    console.log(API_KEY);
     return (
       // Important! Always set the container height explicitly
       <div className="map-container">
@@ -30,13 +31,13 @@ class GoogleMap extends Component {
         >
           {/* NOT ACCURATE ATM */}
           {/* 43.667780, -79.450040 */}
-          <FontAwesomeIcon
+          {/* <FontAwesomeIcon
             className="map-icon"
             icon={faMapMarkerAlt}
             lat={43.66778}
             lng={-79.45004}
             size="2x"
-          />
+          /> */}
         </GoogleMapReact>
       </div>
     );
