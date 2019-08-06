@@ -30,6 +30,9 @@
 
 .about-info {
   font-size: 20px;
-  margin: 15px;
   overflow: scroll;
+}
+
+.about-info p {
+  margin-top: 0px;
 }

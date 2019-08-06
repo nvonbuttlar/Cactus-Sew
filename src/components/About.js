@@ -9,7 +9,7 @@ function About() {
       <animated.div style={fade_transition} className="about-container">
         <img className="about-picture" src={Spacewoman} alt="Spacewoman" />
         <div className="flex-column">
-          <h1 className="about-heading"> Hey, my name is Melinda. </h1>
+          <h1 className="about-heading"> Hello there, </h1>
           <p className="about-info">
             The Brady Bunch the Brady Bunch that's the way we all became the
             Brady Bunch. The movie star the professor and Mary Ann here on
