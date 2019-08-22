@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import Logo from '../images/logo.png';
-import '../styles/Header.css';
-import '../styles/navButton.css';
+// import '../styles/Header.css';
+// import '../styles/navButton.css';
 
 
 class Header extends Component {

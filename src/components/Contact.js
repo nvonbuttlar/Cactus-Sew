@@ -2,7 +2,7 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 
 import GoogleMap from "./Map.js";
-import "../styles/Contact.css";
+// import "../styles/Contact.css";
 
 function Contact() {
   const fade_transition = useSpring({ opacity: 1, from: { opacity: 0 } });

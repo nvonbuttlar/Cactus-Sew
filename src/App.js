@@ -5,6 +5,15 @@ import "./styles/App.css";
 import "./styles/Header.css";
 import "./styles/navButton.css";
 
+// Test
+
+import "./styles/About.css";
+import "./styles/Contact.css";
+import "./styles/Gallery.css";
+import "./styles/Landing.css";
+import "./styles/Map.css";
+import "./styles/Footer.css"; 
+
 import Landing from "./components/Landing.js";
 import Background from "./images/studio.jpg";
 import Cactus from "./images/cactus.png";
