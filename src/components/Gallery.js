@@ -3,7 +3,7 @@ import { Spring } from "react-spring/renderprops";
 import PhotoGallery from "react-photo-gallery";
 import Lightbox from "react-images";
 
-// import "../styles/Gallery.css";
+import "../styles/Gallery.css";
 
 import { GALLERY_IMAGES } from "../utils/gallery-utils";
 
