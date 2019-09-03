@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Route, Switch, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import "./styles/App.css";
 import "./styles/Header.css";
@@ -15,7 +15,7 @@ import Footer from "./components/Footer.js";
 
 function App() {
   return (
-    <HashRouter>
+    <Router>
       <div className="page-content">
         <img
           className="background"
@@ -25,52 +25,32 @@ function App() {
 
         <div id="headercontainer">
           <div id="titlecontainer">
-            <NavLink to="/" className="link">
+            <Link to="/" className="link">
               <img className="cactus" src={Cactus} alt="Cactus Logo" />
-            </NavLink>
+            </Link>
           </div>
 
           <div className="navBar">
-            <NavLink
-              to="/about"
-              className="link navBtn"
-              activeClassName="active"
-            >
+            <Link to="/about" className="link navBtn">
               About
-            </NavLink>
-            <NavLink
-              to="/gallery"
-              className="link navBtn"
-              activeClassName="active"
-            >
+            </Link>
+            <Link to="/gallery" className="link navBtn">
               Gallery
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className="link navBtn"
-              activeClassName="active"
-            >
+            </Link>
+            <Link to="/contact" className="link navBtn">
               Contact
-            </NavLink>
+            </Link>
           </div>
         </div>
 
-        <div>
-          <Route
-            render={() => (
-              <Switch>
-                <Route exact path="/" component={Landing} />
-                <Route path="/about" component={About} />
-                <Route path="/gallery" component={Gallery} />
-                <Route path="/contact" component={Contact} />
-              </Switch>
-            )}
-          />
-        </div>
+        <Route exact path="/" component={Landing} />
+        <Route path="/about" component={About} />
+        <Route path="/gallery" component={Gallery} />
+        <Route path="/contact" component={Contact} />
 
         <Footer />
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 
