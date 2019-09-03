@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
+import { HashRouter, Route, Switch, NavLink } from "react-router-dom";
 
 import "./styles/App.css";
 import "./styles/Header.css";
@@ -15,7 +15,7 @@ import Footer from "./components/Footer.js";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="page-content">
         <img
           className="background"
@@ -70,7 +70,7 @@ function App() {
 
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
