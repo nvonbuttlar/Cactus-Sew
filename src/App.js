@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
 
 import "./styles/App.css";
 import "./styles/Header.css";
@@ -15,7 +15,7 @@ import Footer from "./components/Footer.js";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="page-content">
         <img
           className="background"
@@ -25,32 +25,52 @@ function App() {
 
         <div id="headercontainer">
           <div id="titlecontainer">
-            <Link to="/" className="link">
+            <NavLink to="/" className="link">
               <img className="cactus" src={Cactus} alt="Cactus Logo" />
-            </Link>
+            </NavLink>
           </div>
 
           <div className="navBar">
-            <Link to="/about" className="link navBtn">
+            <NavLink
+              to="/about"
+              className="link navBtn"
+              activeClassName="active"
+            >
               About
-            </Link>
-            <Link to="/gallery" className="link navBtn">
+            </NavLink>
+            <NavLink
+              to="/gallery"
+              className="link navBtn"
+              activeClassName="active"
+            >
               Gallery
-            </Link>
-            <Link to="/contact" className="link navBtn">
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className="link navBtn"
+              activeClassName="active"
+            >
               Contact
-            </Link>
+            </NavLink>
           </div>
         </div>
 
-        <Route exact path="/" component={Landing} />
-        <Route path="/about" component={About} />
-        <Route path="/gallery" component={Gallery} />
-        <Route path="/contact" component={Contact} />
+        <div>
+          <Route
+            render={() => (
+              <Switch>
+                <Route exact path="/" component={Landing} />
+                <Route path="/about" component={About} />
+                <Route path="/gallery" component={Gallery} />
+                <Route path="/contact" component={Contact} />
+              </Switch>
+            )}
+          />
+        </div>
 
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
