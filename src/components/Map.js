@@ -20,7 +20,6 @@ class GoogleMap extends Component {
   render() {
     const { center, zoom } = this.props;
     const API_KEY = process.env.REACT_APP_API_KEY;
-    console.log(process.env);
     return (
       // Important! Always set the container height explicitly
       <div className="map-container">

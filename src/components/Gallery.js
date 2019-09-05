@@ -7,8 +7,6 @@ import "../styles/Gallery.css";
 
 import { GALLERY_IMAGES } from "../utils/gallery-utils";
 
-console.log(GALLERY_IMAGES);
-
 const photos = [
   {
     src: GALLERY_IMAGES[0].src,
