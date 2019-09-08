@@ -12,3 +12,10 @@
   color: #cb2238;
   cursor: pointer;
 } */
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  .map-container {
+    margin-top: 70px;
+  }
+}

@@ -23,7 +23,7 @@ h1 {
   opacity: 0;
   -webkit-animation: type3 3.5s steps(33, end),
     blink 0.5s step-end infinite alternate;
-  animation: type3 3.5s steps (33, end), blink 0.5s step-end infinite alternate;
+  animation: type3 3.5s steps (33, end);
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
   -webkit-animation-fill-mode: forwards;
@@ -63,5 +63,18 @@ h1 {
 @-webkit-keyframes blink {
   50% {
     border-color: tranparent;
+  }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  h1 {
+    width: auto;
+    letter-spacing: 0.15em;
+    font-size: 30px;
+  }
+
+  .css-typing {
+    width: 630px;
   }
 }

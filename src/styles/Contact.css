@@ -21,3 +21,10 @@
 h2 {
   margin: 0;
 }
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  .contact-info {
+    margin-top: 70px;
+  }
+}
