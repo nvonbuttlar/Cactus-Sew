@@ -22,9 +22,17 @@ h2 {
   margin: 0;
 }
 
-/* Tablet */
+/* ============= */
+/* Media Queries */
+/* ============= */
+
 @media only screen and (max-width: 768px) {
+  /* mobile */
+  .contact-container {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
   .contact-info {
-    margin-top: 70px;
+    display: none;
   }
 }

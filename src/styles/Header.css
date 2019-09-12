@@ -1,11 +1,15 @@
-a, a:link, a:visited, a:focus, a:hover, a:active{
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
   color: white;
-  text-decoration:none;
+  text-decoration: none;
   cursor: pointer;
 }
 
-
-#headercontainer {
+#desktop-header {
   width: 100%;
   position: fixed;
   display: flex;
@@ -22,9 +26,8 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
   justify-content: flex-start;
 }
 
-
 .title {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   font-weight: bolder;
   font-size: 90px;
   margin: 10px 50px;
@@ -43,15 +46,37 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
   margin-top: 20px;
 }
 
+.mobile-header {
+  display: none;
+}
 
-@media (max-width: 1600px) {
-  h1.title {
-    font-size: 60px;
+@media only screen and (max-width: 430px) {
+  #desktop-header {
+    display: none;
   }
 
-  /* img.logo {
-    height: 70px;
-    width: 70px;
-  } */
+  #mobile-header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    /* background-color: hsla(0, 0%, 0%, 0.75); */
+    z-index: 1;
+  }
 
+  .cactus {
+    height: 70px;
+    width: 45px;
+    margin: 5px;
+  }
+
+  .menu-icon {
+    margin: 5px;
+  }
+
+  .menu-container {
+    background-color: red;
+  }
 }

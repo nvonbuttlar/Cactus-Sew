@@ -21,15 +21,12 @@ class GoogleMap extends Component {
     const { center, zoom } = this.props;
     const API_KEY = process.env.REACT_APP_API_KEY;
     return (
-      // Important! Always set the container height explicitly
       <div className="map-container">
         <GoogleMapReact
           bootstrapURLKeys={{ key: API_KEY }}
           defaultCenter={center}
           defaultZoom={zoom}
         >
-          {/* NOT ACCURATE ATM */}
-          {/* 43.667780, -79.450040 */}
           <FontAwesomeIcon
             className="map-icon"
             icon={faMapMarkerAlt}

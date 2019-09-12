@@ -30,6 +30,10 @@ h1 {
   animation-fill-mode: forwards;
 }
 
+.static-title {
+  display: none;
+}
+
 /* Keyframes */
 @keyframes type3 {
   0% {
@@ -66,7 +70,20 @@ h1 {
   }
 }
 
-/* Tablet */
+/* mobile */
+@media only screen and (max-width: 650px) {
+  .css-typing {
+    display: none;
+  }
+
+  .static-title {
+    display: block;
+    text-align: center;
+    letter-spacing: 0.15em;
+    line-height: 1.5em;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   h1 {
     width: auto;

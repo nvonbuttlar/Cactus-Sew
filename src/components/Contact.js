@@ -4,11 +4,10 @@ import { useSpring, animated } from "react-spring";
 import GoogleMap from "./Map.js";
 import "../styles/Contact.css";
 
-function Contact() {
+const Contact = () => {
   const fade_transition = useSpring({ opacity: 1, from: { opacity: 0 } });
   return (
     <animated.div style={fade_transition} className="contact-container">
-      <GoogleMap />
       <div className="contact-info">
         <h2>Come find us!</h2>
         <p>
@@ -27,8 +26,9 @@ function Contact() {
           <br />
         </p>
       </div>
+      <GoogleMap />
     </animated.div>
   );
-}
+};
 
 export default Contact;

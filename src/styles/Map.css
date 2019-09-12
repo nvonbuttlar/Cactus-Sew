@@ -1,7 +1,7 @@
 .map-container {
-  margin: 15px;
-  width: 500px;
-  height: 350px;
+  margin: 20px;
+  width: 520px;
+  height: 345px;
 }
 
 .map-icon {
@@ -13,9 +13,14 @@
   cursor: pointer;
 } */
 
-/* Tablet */
+/* mobile */
 @media only screen and (max-width: 768px) {
   .map-container {
-    margin-top: 70px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
   }
 }
