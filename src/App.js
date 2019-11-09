@@ -16,11 +16,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="page-content">
-        <img
-          className="background"
-          src={Background}
-          alt="background of studio"
-        />
+        <div className="overlay"></div>
 
         {/* <div id="headercontainer">
           <div id="titlecontainer">
