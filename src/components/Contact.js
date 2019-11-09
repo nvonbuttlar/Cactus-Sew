@@ -7,7 +7,7 @@ import "../styles/Contact.css";
 const Contact = () => {
   const fade_transition = useSpring({ opacity: 1, from: { opacity: 0 } });
   return (
-    <animated.div style={fade_transition} className="contact-container">
+    <animated.div id="contact" style={fade_transition} className="contact-container">
       <div className="contact-info">
         <h2>Come find us!</h2>
         <p>

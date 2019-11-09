@@ -6,28 +6,36 @@ import "../styles/navButton.css";
 
 import Cactus from "../images/cactus.png";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-
 const Header = () => {
-  const [dropMenu, setdropMenu] = useState(false);
   return (
     <>
-      <div id="desktop-header">
-        <div id="titlecontainer">
-          <Link to="/" className="link">
+      <div className="header">
+        <div className="titlecontainer">
+          <Link to="#landing" className="link">
             <img className="cactus" src={Cactus} alt="Cactus Logo" />
           </Link>
         </div>
 
         <div className="navBar">
-          <Link to="#about" className="link navBtn" activeClassName="active">
+          <Link
+            to="#about"
+            className="link navBtn"
+            activeClassName="active"
+          >
             About
           </Link>
-          <Link to="#contact" className="link navBtn" activeClassName="active">
+          <Link
+            to="#contact"
+            className="link navBtn"
+            activeClassName="active"
+          >
             Contact
           </Link>
-          <Link to="#gallery" className="link navBtn" activeClassName="active">
+          <Link
+            to="#gallery"
+            className="link navBtn"
+            activeClassName="active"
+          >
             Gallery
           </Link>
         </div>

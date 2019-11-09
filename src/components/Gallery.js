@@ -121,7 +121,7 @@ class Gallery extends Component {
     return (
       <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
         {props => (
-          <div style={props} className="gallery">
+          <div id="gallery" style={props} className="gallery">
             <PhotoGallery
               key={photos.id}
               photos={photos}
