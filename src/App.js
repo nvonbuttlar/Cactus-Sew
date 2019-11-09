@@ -17,41 +17,7 @@ const App = () => {
     <BrowserRouter>
       <div className="page-content">
         <div className="overlay"></div>
-
-        {/* <div id="headercontainer">
-          <div id="titlecontainer">
-            <NavLink to="/" className="link">
-              <img className="cactus" src={Cactus} alt="Cactus Logo" />
-            </NavLink>
-          </div>
-
-          <div className="navBar">
-            <NavLink
-              to="/about"
-              className="link navBtn"
-              activeClassName="active"
-            >
-              About
-            </NavLink>
-            <NavLink
-              to="/gallery"
-              className="link navBtn"
-              activeClassName="active"
-            >
-              Gallery
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className="link navBtn"
-              activeClassName="active"
-            >
-              Contact
-            </NavLink>
-          </div>
-        </div> */}
-
-        <Header />
-
+{/* 
         <div>
           <Route
             render={() => (
@@ -63,8 +29,13 @@ const App = () => {
               </Switch>
             )}
           />
-        </div>
-
+        </div> */}
+        
+        <Header />
+        <Landing />
+        <About />
+        <Contact />
+        <Gallery />
         <Footer />
       </div>
     </BrowserRouter>

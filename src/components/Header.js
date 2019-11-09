@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 import "../styles/Header.css";
 import "../styles/navButton.css";
@@ -15,29 +15,21 @@ const Header = () => {
     <>
       <div id="desktop-header">
         <div id="titlecontainer">
-          <NavLink to="/" className="link">
+          <Link to="/" className="link">
             <img className="cactus" src={Cactus} alt="Cactus Logo" />
-          </NavLink>
+          </Link>
         </div>
 
         <div className="navBar">
-          <NavLink to="/about" className="link navBtn" activeClassName="active">
+          <Link to="#about" className="link navBtn" activeClassName="active">
             About
-          </NavLink>
-          <NavLink
-            to="/gallery"
-            className="link navBtn"
-            activeClassName="active"
-          >
-            Gallery
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className="link navBtn"
-            activeClassName="active"
-          >
+          </Link>
+          <Link to="#contact" className="link navBtn" activeClassName="active">
             Contact
-          </NavLink>
+          </Link>
+          <Link to="#gallery" className="link navBtn" activeClassName="active">
+            Gallery
+          </Link>
         </div>
       </div>
     </>

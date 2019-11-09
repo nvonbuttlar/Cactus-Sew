@@ -6,7 +6,7 @@ import "../styles/About.css";
 const About = () => {
   const fade_transition = useSpring({ opacity: 1, from: { opacity: 0 } });
   return (
-    <animated.div style={fade_transition} className="about-container">
+    <animated.div id="about" style={fade_transition} className="about-container">
       <img className="about-picture" src={Spacewoman} alt="Spacewoman" />
       <div className="flex-column">
         <h1 className="about-heading"> Hello there, </h1>
