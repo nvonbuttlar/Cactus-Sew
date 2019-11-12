@@ -1,5 +1,5 @@
 .container {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,10 +28,6 @@ h1 {
   animation-delay: 0.2s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-}
-
-.static-title {
-  display: none;
 }
 
 /* Keyframes */
@@ -71,19 +67,6 @@ h1 {
 }
 
 /* mobile */
-@media only screen and (max-width: 650px) {
-  .css-typing {
-    display: none;
-  }
-
-  .static-title {
-    display: block;
-    text-align: center;
-    letter-spacing: 0.15em;
-    line-height: 1.5em;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   h1 {
     width: auto;
@@ -95,3 +78,10 @@ h1 {
     width: 630px;
   }
 }
+
+@media only screen and (max-width: 650px) {
+  .css-typing {
+    display: none;
+  }
+}
+

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Spring } from "react-spring/renderprops";
 import PhotoGallery from "react-photo-gallery";
 import Lightbox from "react-images";
 
@@ -119,7 +118,7 @@ class Gallery extends Component {
 
   render() {
     return (
-      <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
+      <>
         {props => (
           <div id="gallery" style={props} className="gallery">
             <PhotoGallery
@@ -138,7 +137,7 @@ class Gallery extends Component {
             />
           </div>
         )}
-      </Spring>
+      </>
     );
   }
 }

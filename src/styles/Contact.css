@@ -4,7 +4,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
+  background-color: #36486b; 
 }
 
 .contact-info {

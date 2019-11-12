@@ -1,12 +1,10 @@
 import React from "react";
 import Spacewoman from "../images/spacewoman.jpg";
-import { useSpring, animated } from "react-spring";
 import "../styles/About.css";
 
 const About = () => {
-  const fade_transition = useSpring({ opacity: 1, from: { opacity: 0 } });
   return (
-    <animated.div id="about" style={fade_transition} className="about-container">
+    <div id="about" className="about-container">
       <img className="about-picture" src={Spacewoman} alt="Spacewoman" />
       <div className="flex-column">
         <h1 className="about-heading"> Hello there, </h1>
@@ -19,7 +17,7 @@ const About = () => {
           These stitches be crazy!
         </p>
       </div>
-    </animated.div>
+    </div>
   );
 };
 

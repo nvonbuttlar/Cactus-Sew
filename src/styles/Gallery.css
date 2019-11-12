@@ -1,7 +1,7 @@
 .gallery {
   height: auto;
   overflow-y: scroll;
-  margin-bottom: 95px;
+  background-color: #36486b;
 }
 
 /* media query for laptop */

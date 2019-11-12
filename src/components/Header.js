@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
 import "../styles/Header.css";
@@ -17,26 +17,14 @@ const Header = () => {
         </div>
 
         <div className="navBar">
-          <Link
-            to="#about"
-            className="link navBtn"
-            activeClassName="active"
-          >
+          <Link to="#about" className="link navBtn" activeClassName="active">
             About
           </Link>
-          <Link
-            to="#contact"
-            className="link navBtn"
-            activeClassName="active"
-          >
-            Contact
-          </Link>
-          <Link
-            to="#gallery"
-            className="link navBtn"
-            activeClassName="active"
-          >
+          <Link to="#gallery" className="link navBtn" activeClassName="active">
             Gallery
+          </Link>
+          <Link to="#contact" className="link navBtn" activeClassName="active">
+            Contact
           </Link>
         </div>
       </div>
