@@ -1,11 +1,11 @@
 .about-container {
   color: white;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #36486b;
+  background-color: #030812;
 }
 
 .flex-column {

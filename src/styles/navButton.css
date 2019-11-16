@@ -1,13 +1,13 @@
 .navBtn {
-  color: white;
+  color: #453d22;
   padding: 10px 20px;
   margin: 15px 30px;
   align-self: center;
   font-family: 'Raleway', sans-serif;
   border: none;
   border-radius: 5px;
-  background-color: #e84900;
-  font-size: 19px;
+  background-color: #f5e8fc;
+  font-size: 18px;
   font-weight: bolder;
   transition: background-color 0.5s ease;
   outline: none;
@@ -24,9 +24,9 @@
 
 }
 
-.navBtn:hover {
+/* .navBtn:hover {
 
   background-color: #CB2238;
   cursor: pointer;
 
-}
+} */
